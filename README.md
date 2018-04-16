@@ -1,6 +1,6 @@
 # Shrug
 
-A short, simple bash script that copies the ¯\_(ツ)_/¯ emoticon to the system clipboard.
+A short, simple bash script that copies the ¯\\_(ツ)_/¯ emoticon to the system clipboard.
 
 ### Setup
 
