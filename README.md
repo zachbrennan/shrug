@@ -12,6 +12,7 @@ Copy the ```shrug``` file to either your ```/bin/``` directory, or your ```~/bin
 |------|--------|
 | None | Copies the standard shrug emoticon to the clipboard                                |
 | -r   | Copies a shrug emote that is properly formatted for a Reddit post to the clipboard |
+| -m   | Copies a shrug emote that is properly formatted for Markdown the clipboard |
 
 ### Notes
 
