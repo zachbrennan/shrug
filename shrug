@@ -1,8 +1,17 @@
 #!/bin/bash
+
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	echo -ne '¯\\_(ツ)_/¯' | xclip -selection clipboard;
+elif [[ "$OSTYPE" == "darwin*" ]]; then
+	echo -ne '¯\\_(ツ)_/¯' | pbcopy;
+fi
+
+
 while getopts "r" OPTION
 do
     case $OPTION in
-        r)
+        r)  
             if [[ "$OSTYPE" == "linux-gnu" ]]; then
             	echo -ne '¯\\\\\\_(ツ)_/¯' | xclip -selection clipboard;
             elif [[ "$OSTYPE" == "darwin*" ]]; then
@@ -11,10 +20,4 @@ do
 	    ;;
     esac
 done
-
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	echo -ne '¯\\_(ツ)_/¯' | xclip -selection clipboard;
-elif [[ "$OSTYPE" == "darwin*" ]]; then
-	echo -ne '¯\\_(ツ)_/¯' | pbcopy;
-fi
 
