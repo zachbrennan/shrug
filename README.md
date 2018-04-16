@@ -16,4 +16,4 @@ Copy the ```shrug``` file to either your ```/bin/``` directory, or your ```~/bin
 
 ### Notes
 
-Gotta get Roger's GitHub page for an attribution for the idea
+Based off of a fun idea that [Roger](https://github.com/RogerThat427) had implemented.
