@@ -8,7 +8,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 
-while getopts "r" OPTION
+while getopts "rm" OPTION
 do
     case $OPTION in
         r)  
@@ -18,6 +18,14 @@ do
             	echo -ne '¯\\\\\\_(ツ)_/¯' | pbcopy;
             fi  
 	    ;;
+        m)  
+            if [[ "$OSTYPE" == "linux-gnu" ]]; then
+            	echo -ne '¯\\\_(ツ)\_/¯' | xclip -selection clipboard;
+            elif [[ "$OSTYPE" == "darwin"* ]]; then
+            	echo -ne '¯\\\_(ツ)\_/¯' | pbcopy;
+            fi  
+	    ;;
+
     esac
 done
 
